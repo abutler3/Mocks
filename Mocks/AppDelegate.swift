@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +18,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.setupParse()
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let navigationController = UINavigationController()
+        let startViewController = StartViewController(nibName: "StartViewController", bundle: nil)
+//        startViewController.view.backgroundColor = UIColor.orangeColor()
+        
+        if PFUser.currentUser() == nil
+        {
+            // TODO: present the main UI
+            navigationController.viewControllers = [startViewController]
+            println("user does not exist!")
+        }
+        else
+        {
+            // TODO: Present UI for logging in or creating an account
+            println("we have a user")
+        }
+        
+        self.window!.rootViewController = navigationController
+        self.window!.makeKeyAndVisible()
+        
         return true
+    }
+    
+    func setupParse()
+    {
+        Parse.enableLocalDatastore()
+        
+        Parse.setApplicationId("4CoF6JxbsHkK9Z4YAsXNX34SDI9Smj1XrVNpC6y3",
+            clientKey: "8roGdlqXz38MMKZysRv4G9SczXJRARF75VSsy9Ez")
+        
+//        let testObject = PFObject(className: "TestObject")
+//        testObject["foo"] = "bar2"
+//        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+//            println("Object has been saved.")
+//        }
+
     }
 
     func applicationWillResignActive(application: UIApplication) {

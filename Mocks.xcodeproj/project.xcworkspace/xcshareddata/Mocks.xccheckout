@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6DB4AE89-A105-45D9-B90F-BE024D12441C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Mocks</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>572CE4BBF351291B12CC9E08096615E988AC481F</key>
+		<string>https://github.com/abutler3/Mocks.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mocks.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>572CE4BBF351291B12CC9E08096615E988AC481F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/abutler3/Mocks.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>572CE4BBF351291B12CC9E08096615E988AC481F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>572CE4BBF351291B12CC9E08096615E988AC481F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Mocks</string>
+		</dict>
+	</array>
+</dict>
+</plist>
